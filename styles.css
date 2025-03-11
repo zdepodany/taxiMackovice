@@ -1,8 +1,21 @@
 :root {
-    --primary-color: #ffd700;
-    --secondary-color: #333;
-    --text-color: #333;
+    --primary-color: #F8DC41;
+    --secondary-color: #2C2C2C;
+    --text-color: #2C2C2C;
     --background-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-timeline: 1500ms;  /* Delší čas pro pomalejší scroll */
+}
+
+/* Pro Safari a další prohlížeče, které nemusí podporovat scroll-timeline */
+@media screen {
+    html {
+        scroll-behavior: smooth;
+        transition: all 1s ease;
+    }
 }
 
 * {
@@ -12,7 +25,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
 }
@@ -35,9 +48,13 @@ nav {
 }
 
 .logo {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
 }
 
 .contact-header a {
@@ -140,6 +157,224 @@ footer {
     margin-top: 2rem;
 }
 
+.opening-hours {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.hours-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(248, 220, 65, 0.1);
+    border-radius: 10px;
+}
+
+.hours-item {
+    margin: 1rem 0;
+}
+
+.hours-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.hours-item p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.vehicle-info {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.vehicle-details {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.info-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.info-item p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hours-note {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(248, 220, 65, 0.2);
+}
+
+.hours-note p {
+    font-size: 1rem;
+    margin: 0.7rem 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.pricing {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.pricing-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(248, 220, 65, 0.1);
+    border-radius: 10px;
+}
+
+.pricing-table {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.pricing-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(248, 220, 65, 0.2);
+    font-size: 1.2rem;
+}
+
+.pricing-row.header {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.price {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.pricing-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.pricing-detail {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.pricing-note {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(248, 220, 65, 0.2);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: rgba(248, 220, 65, 0.1);
+}
+
+.phone-number {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.phone-number:hover {
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.secondary-button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.secondary-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
@@ -147,5 +382,43 @@ footer {
     
     .tagline {
         font-size: 1.2rem;
+    }
+    .logo-image {
+        height: 30px;
+    }
+    .vehicle-details {
+        gap: 2rem;
+    }
+    
+    .info-item {
+        padding: 1.5rem;
+    }
+    .pricing-row {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+    
+    .pricing-detail {
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .secondary-button {
+        width: 100%;
+        text-align: center;
     }
 } 

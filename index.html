@@ -6,16 +6,19 @@
     <title>Taxi Dokoupil - Spolehlivá taxi služba</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Taxi Dokoupil</div>
-            <div class="contact-header">
-                <a href="tel:+420123456789" class="phone-number">
-                    <strong>☎ XXX XXX XXX</strong>
+            <div class="logo">
+                <img src="img/logo.png" alt="Taxi Dokoupil" class="logo-image">
+            </div>
+            <div class="nav-links">
+                <a href="#pricing" class="nav-link">Ceník</a>
+                <a href="tel:+420799010707" class="phone-number">
+                    <strong>☎ +420 799 010 707</strong>
                 </a>
             </div>
         </nav>
@@ -25,23 +28,103 @@
         <section class="hero">
             <h1>Taxi Dokoupil</h1>
             <p class="tagline">Spolehlivá přeprava 24/7</p>
-            <a href="tel:+420123456789" class="cta-button">Zavolejte nám</a>
+            <div class="hero-buttons">
+                <a href="tel:+420799010707" class="cta-button">Zavolejte nám</a>
+                <a href="#pricing" class="secondary-button">Zobrazit ceník</a>
+            </div>
         </section>
 
         <section class="services">
             <h2>Naše služby</h2>
             <div class="service-grid">
                 <div class="service-item">
-                    <h3>Osobní přeprava</h3>
-                    <p>Bezpečná a pohodlná přeprava osob po městě i okolí</p>
+                    <h3>Taxislužba</h3>
+                    <p>Klasická taxislužba počítaná taxametrem. Přeprava na zábavu, do práce, na nákupy nebo na letiště.</p>
                 </div>
                 <div class="service-item">
-                    <h3>Firemní přeprava</h3>
-                    <p>Služby pro firmy a jejich zaměstnance</p>
+                    <h3>Smluvní přeprava</h3>
+                    <p>Přeprava s předem dohodnutou cenou, místem nástupu a výstupu, časem a počtem cestujících či zavazadel.</p>
                 </div>
                 <div class="service-item">
-                    <h3>Letištní transfery</h3>
-                    <p>Spolehlivá doprava na letiště a zpět</p>
+                    <h3>Firemní akce & svatby</h3>
+                    <p>Možnost pronájmu vozu s řidičem pro firemní akce, svatby a další speciální příležitosti.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Kurýrní služby</h3>
+                    <p>Rozvoz a doručování zásilek v rámci provozní doby.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <h2>Ceník</h2>
+            <div class="pricing-container">
+                <div class="pricing-table">
+                    <div class="pricing-row header">
+                        <div>Vzdálenost</div>
+                        <div>Cena</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div>Do 10 km</div>
+                        <div class="price">40 Kč/km</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div>Do 20 km</div>
+                        <div class="price">35 Kč/km</div>
+                    </div>
+                    <div class="pricing-row">
+                        <div>Nad 20 km</div>
+                        <div class="price">30 Kč/km</div>
+                    </div>
+                </div>
+                <div class="pricing-info">
+                    <div class="pricing-detail">
+                        <span class="highlight">+ Nástupné:</span> 50 Kč
+                    </div>
+                    <div class="pricing-detail">
+                        <span class="highlight">+ Čekání:</span> 10 Kč/min
+                    </div>
+                </div>
+                <div class="pricing-note">
+                    <p>⚠️ Při nástupu vzdálenějším než 20 km od Mackovic může být účtován příplatek nebo vyšší sazba.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="vehicle-info">
+            <h2>Náš vůz</h2>
+            <div class="info-container">
+                <div class="vehicle-details">
+                    <div class="info-item">
+                        <h3>Renault Scenic</h3>
+                        <ul>
+                            <p>👥 Přeprava až 6 osob najednou</p>
+                            <p>✨ Prostorné, udržované vozidlo</p>
+                            <p>🧼 Pravidelně čištěný interiér</p>
+                        </ul>
+                    </div>
+                    <div class="info-item payment-methods">
+                        <h3>Možnosti platby</h3>
+                        <div class="payment-icons">
+                            <p>💵 Hotovost</p>
+                            <p>💳 Platební karta</p>
+                            <p>📱 QR platba</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="opening-hours">
+            <h2>Provozní doba</h2>
+            <div class="hours-container">
+                <div class="hours-item">
+                    <h3>Pátek a Sobota</h3>
+                    <p>18:00 - 05:00</p>
+                </div>
+                <div class="hours-note">
+                    <p>🕒 Mimo uvedenou dobu je možná přeprava po telefonické domluvě</p>
+                    <p>📅 Informace o provozu během svátků najdete na našich sociálních sítích</p>
                 </div>
             </div>
         </section>
@@ -49,15 +132,17 @@
         <section class="contact">
             <h2>Kontaktujte nás</h2>
             <div class="contact-info">
-                <p>📞 <a href="tel:+420123456789">XXX XXX XXX</a></p>
+                <p>📞 <a href="tel:+420799010707">+420 799 010 707</a></p>
+                <p>💬 <a href="https://wa.me/420799010707" target="_blank">WhatsApp: 799 010 707</a></p>
                 <p>📧 <a href="mailto:info@taxidokoupil.cz">info@taxidokoupil.cz</a></p>
                 <p>🏢 Mackovice 101, 671 78</p>
+                <p>📱 <a href="https://www.facebook.com/profile.php?id=61573698553614" target="_blank">Facebook: Taxi Dokoupil</a></p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>2024 Taxi Dokoupil</p>
+        <p>2025 Taxi Dokoupil</p>
     </footer>
 </body>
 </html> 
