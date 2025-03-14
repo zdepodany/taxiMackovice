@@ -452,4 +452,19 @@ footer p {
     .fb-page {
         width: 100% !important;
     }
+}
+
+.credits {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.credits a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.credits a:hover {
+    opacity: 0.8;
 } 
