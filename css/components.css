@@ -451,4 +451,19 @@ footer {
         width: 100%;
         max-width: 100%;
     }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
 } 

@@ -23,3 +23,22 @@ document.addEventListener('DOMContentLoaded', function() {
         calculateButton.addEventListener('click', calculatePrice);
     }
 });
+
+// Lazy loading obrázků
+document.addEventListener("DOMContentLoaded", function() {
+    const lazyImages = document.querySelectorAll("img[loading='lazy']");
+    
+    if ("loading" in HTMLImageElement.prototype) {
+        // Prohlížeč podporuje native lazy loading
+        lazyImages.forEach(img => {
+            img.addEventListener("load", function() {
+                this.classList.add("loaded");
+            });
+        });
+    } else {
+        // Fallback pro starší prohlížeče
+        const lazyLoadScript = document.createElement("script");
+        lazyLoadScript.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js";
+        document.body.appendChild(lazyLoadScript);
+    }
+});
