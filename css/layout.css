@@ -1,0 +1,67 @@
+html {
+    scroll-behavior: smooth;
+    scroll-timeline: 1500ms;
+}
+
+@media screen {
+    html {
+        scroll-behavior: smooth;
+        transition: all 1s ease;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+main {
+    margin-top: 60px;
+}
+
+/* Základní layout pro sekce */
+section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+/* Container pro obsah */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Flex layout */
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Responsivní breakpointy */
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .flex {
+        flex-direction: column;
+    }
+} 

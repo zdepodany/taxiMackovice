@@ -1,0 +1,454 @@
+/* Tlačítka */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
+
+.secondary-button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.secondary-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Header a navigace */
+header {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.phone-number {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.phone-number:hover {
+    opacity: 0.9;
+}
+
+/* Hero sekce */
+.hero {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Karty */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+/* Navigace */
+.nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: rgba(248, 220, 65, 0.1);
+}
+
+/* Kontaktní položky */
+.contact {
+    background-color: #f5f5f5;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: left;
+}
+
+.contact-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: rgba(248, 220, 65, 0.1);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    min-width: 2rem;
+    text-align: center;
+}
+
+.contact-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.credits {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.credits a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.credits a:hover {
+    opacity: 0.8;
+}
+
+/* Services sekce */
+.services {
+    background-color: #f9f9f9;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Pricing sekce */
+.pricing {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.pricing-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(248, 220, 65, 0.1);
+    border-radius: 10px;
+}
+
+.pricing-table {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.pricing-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(248, 220, 65, 0.2);
+    font-size: 1.2rem;
+}
+
+.pricing-row.header {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.price {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.pricing-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.pricing-detail {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.pricing-note {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(248, 220, 65, 0.2);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Vehicle info sekce */
+.vehicle-info {
+    background-color: #f9f9f9;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.vehicle-details {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+}
+
+.info-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.payment-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Opening hours sekce */
+.opening-hours {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.hours-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(248, 220, 65, 0.1);
+    border-radius: 10px;
+}
+
+.hours-item {
+    margin: 1rem 0;
+}
+
+.hours-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.hours-item p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hours-note {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(248, 220, 65, 0.2);
+}
+
+.hours-note p {
+    font-size: 1rem;
+    margin: 0.7rem 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Facebook feed */
+.fb-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsivní úpravy */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .logo-image {
+        height: 30px;
+    }
+    
+    .vehicle-details {
+        gap: 2rem;
+    }
+    
+    .info-item {
+        padding: 1.5rem;
+    }
+    
+    .pricing-row {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+    
+    .pricing-detail {
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .cta-button, .secondary-button {
+        display: block;
+        width: auto;
+        min-width: unset;
+        max-width: unset;
+        text-align: center;
+    }
+    
+    .fb-container {
+        overflow: hidden;
+    }
+    
+    .fb-page {
+        width: 100% !important;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+    }
+} 
