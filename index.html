@@ -100,6 +100,22 @@
                     <p>⚠️ Při nástupu vzdálenějším než 20 km od Mackovic může být účtován příplatek nebo vyšší sazba.</p>
                 </div>
             </div>
+
+            <!-- Kalkulačka ceny -->
+            <div class="calculator-container">
+                <h3>Orientační kalkulačka ceny</h3>
+                <div class="calculator">
+                    <div class="calculator-input">
+                        <label for="distance">Vzdálenost (km):</label>
+                        <input type="number" id="distance" min="0" step="0.1" placeholder="Zadejte vzdálenost">
+                    </div>
+                    <button onclick="calculatePrice()" class="calculator-button">Spočítat cenu</button>
+                    <div id="result" class="calculator-result">
+                        <p>Orientační cena: <span id="price">-</span> Kč</p>
+                        <p class="calculator-note">* Cena je pouze orientační. Konečná cena může být ovlivněna doplatky za vzdálenost nebo dalšími faktory.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="vehicle-info">
@@ -206,5 +222,26 @@
     <!-- Facebook SDK -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v18.0" nonce="random_nonce"></script>
+    
+    <!-- Kalkulačka skript -->
+    <script>
+        function calculatePrice() {
+            const distance = parseFloat(document.getElementById('distance').value) || 0;
+            
+            let pricePerKm;
+            if (distance <= 10) {
+                pricePerKm = 40;
+            } else if (distance <= 20) {
+                pricePerKm = 35;
+            } else {
+                pricePerKm = 30;
+            }
+            
+            const basePrice = distance * pricePerKm;
+            const totalPrice = basePrice + 50; // +50 Kč nástupné
+            
+            document.getElementById('price').textContent = totalPrice.toFixed(0);
+        }
+    </script>
 </body>
 </html> 
